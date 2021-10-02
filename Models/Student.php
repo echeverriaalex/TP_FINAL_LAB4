@@ -4,18 +4,15 @@
     use Models\Person as Person;
 
     class Student extends Person
-    {
-        private $recordId;
+    {        
+        private $id;
 
-        public function getRecordId()
-        {
-            return $this->recordId;
+        public function __construct($name='', $surname='', $dni='', $phone='', $id = ''){
+            parent::__construct($name,$surname, $dni, $phone);
+            $this->setId($id);
         }
 
-        public function setRecordId($recordId)
-        {
-            $this->recordId = $recordId;
-        }
+        public function getId(){return $this->id;}
+        public function setId($id){$this->id = $id;}
     }
 ?>
-

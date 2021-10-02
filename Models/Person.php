@@ -3,27 +3,29 @@
 
     class Person
     {
-        private $firstName;
-        private $lastName;
+        private $name;
+        private $surname;
+        private $dni;
+        private $phone;
 
-        public function getFirstName()
-        {
-            return $this->firstName;
+        public function __construct($name='', $surname='', $dni='', $phone=''){
+
+            $this->setName($name);
+            $this->setSurname($surname);
+            $this->setDni($dni);
+            $this->setPhone($phone);
         }
 
-        public function setFirstName($firstName)
-        {
-            $this->firstName = $firstName;
-        }
+        public function getName(){return $this->name;}
+        public function setName($name){$this->name = $name;}
 
-        public function getLastName()
-        {
-            return $this->lastName;
-        }
+        public function getSurname(){return $this->surname;}
+        public function setSurname($surname){$this->surname = $surname;}
 
-        public function setLastName($lastName)
-        {
-            $this->lastName = $lastName;
-        }
+        public function getDni(){return $this->dni;}
+        public function setDni($dni){$this->dni = $dni;}
+
+        public function getPhone(){return $this->phone;}
+        public function setPhone($phone){$this->phone = $phone;}
     }
 ?>
