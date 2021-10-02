@@ -4,24 +4,27 @@
 <main class="py-5">
      <section id="listado" class="mb-5">
           <div class="container">
-               <h2 class="mb-4">Listado de clientes</h2>
+               <h2 class="mb-4">Students list </h2>
                <table class="table bg-light-alpha">
                     <thead>
-                         <th>Legajo</th>
-                         <th>Apellido</th>
-                         <th>Nombre</th>
+                         <th>ID</th>
+                         <th>Name</th>
+                         <th>Surname</th>
+                         <th>DNI</th>
+                         <th>Phone</th>
                     </thead>
                     <tbody>
                          <?php
-                              foreach($studentList as $student)
-                              {
-                                   ?>
-                                        <tr>
-                                             <td><?php echo $student->getRecordId() ?></td>
-                                             <td><?php echo $student->getLastName() ?></td>
-                                             <td><?php echo $student->getFirstName() ?></td>
-                                        </tr>
-                                   <?php
+                              foreach($studentList as $student){
+                         ?>
+                                   <tr>
+                                        <td><?php echo $student->getId(); ?></td>
+                                        <td><?php echo $student->getName(); ?></td>
+                                        <td><?php echo $student->getSurname(); ?></td>
+                                        <td><?php echo $student->getDni(); ?></td>
+                                        <td><?php echo $student->getPhone(); ?></td>
+                                    </tr>
+                         <?php
                               }
                          ?>
                          </tr>
