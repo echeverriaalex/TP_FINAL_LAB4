@@ -1,0 +1,20 @@
+[
+    {
+        "address": "Av. Colon 234",
+        "phone": "223456987",
+        "cuit": "878946",
+        "name": "Globant"
+    },
+    {
+        "address": "Av. Independencia 4250",
+        "phone": "455468712",
+        "cuit": "545120",
+        "name": "Accenture"
+    },
+    {
+        "address": "Av. Luro 1934",
+        "phone": "51518862",
+        "cuit": "456771",
+        "name": "Arcor"
+    }
+]
