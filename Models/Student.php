@@ -5,14 +5,30 @@
 
     class Student extends Person
     {        
-        private $id;
+        private $studentId;
+        private $carrerId;
+        private $fileNumber;
+        private $active;
 
-        public function __construct($name='', $surname='', $dni='', $phone='', $id = ''){
-            parent::__construct($name,$surname, $dni, $phone);
-            $this->setId($id);
+        public function __construct($name='', $surname='', $dni='', $phone='', $gender='', $birthDate='', $email='', $studentId='', $carrerId='', $fileNumber='', $active=''){
+
+            parent::__construct($name,$surname, $dni, $phone, $gender, $birthDate, $email);
+            $this->setStudentId($studentId);
+            $this->setCarrerId($carrerId);
+            $this->setFileNumber($fileNumber);
+            $this->setActive($active);
         }
+    
+        public function getStudentId(){return $this->studentId;}
+        public function setStudentId($studentId){$this->studentId = $studentId;}
 
-        public function getId(){return $this->id;}
-        public function setId($id){$this->id = $id;}
+        public function getCarrerId(){return $this->carrerId;}
+        public function setCarrerId($carrerId){$this->carrerId = $carrerId;}
+
+        public function getFileNumber(){return $this->fileNumber;}
+        public function setFileNumber($fileNumber){$this->fileNumber = $fileNumber;}
+
+        public function getActive(){return $this->active;}
+        public function setActive($active){$this->active = $active;}
     }
 ?>
