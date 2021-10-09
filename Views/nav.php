@@ -1,19 +1,22 @@
-<nav class="navbar navbar-expand-lg  navbar-dark bg-dark">
-     <span class="navbar-text">
-          <a href="<?php echo FRONT_ROOT?>Home/Index"> Home </a>
-     </span>
-     <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-               <a class="nav-link" href="<?php echo FRONT_ROOT ?>Student/ShowAddView">Add Student</a>
-          </li>
-          <li class="nav-item">
-               <a class="nav-link" href="<?php echo FRONT_ROOT ?>Student/ShowListView">List Student</a>
-          </li>
-          <li>
-               <a class="nav-link" href="<?php echo FRONT_ROOT ?>Student/ShowMyProfile">My profile</a>
-          </li>
-          <li>
-               <a class="nav-link" href="<?php echo FRONT_ROOT ?>Company/ShowListView">List companies</a>
-          </li>
-     </ul>
-</nav>
+<div class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+               
+            <ul class="nav">
+              <li class="scroll-to-section"><a href="<?php= FRONT_ROOT?>Home/Index" class="active">Home</a></li>
+              <li class="scroll-to-section"><a href="#services">Information</a></li>
+              <li class="scroll-to-section"><a href="<?= FRONT_ROOT?>Home/viewSignIn">Sign Up</a></li> 
+              <li class="scroll-to-section"><div class="main-red-button-hover"><a href="<?= FRONT_ROOT?>Home/viewSignIn">Sign In</a></div></li> 
+              
+            </ul>        
+            <a class='menu-trigger'>
+                <span>Menu</span>
+            </a>
+            <!-- ***** Menu End ***** -->
+          </nav>
+        </div>
+      </div>
+    </div>
+</div>
