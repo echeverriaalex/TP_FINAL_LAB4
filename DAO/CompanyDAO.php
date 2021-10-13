@@ -2,7 +2,8 @@
     namespace DAO;
 
     use DAO\ICompanyDAO;
-    use Models\Company;
+use Models\Career;
+use Models\Company;
 
     class CompanyDAO implements ICompanyDAO{
 

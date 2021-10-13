@@ -16,4 +16,7 @@
                <a class="nav-link" href="<?php echo FRONT_ROOT ?>Company/ShowListView">List companies</a>
           </li>
      </ul>
+     <?php
+          include_once "search-bar.php";
+     ?>
 </nav>

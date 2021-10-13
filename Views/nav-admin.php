@@ -13,4 +13,7 @@
                <a class="nav-link" href="<?php echo FRONT_ROOT ?>Company/ShowDeleteView">Delete company</a>
           </li>
      </ul>
+     <?php
+          include_once "search-bar.php";
+     ?>
 </nav>
